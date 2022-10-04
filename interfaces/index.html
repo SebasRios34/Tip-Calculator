@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App by SebasRios</title>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="title-container">
+        <h2>SPLI</h2>
+        <h2>TTER</h2>
+      </div>
+      <div class="calculator-container">
+        <div class="input-container">
+          <div class="bill-container">
+            <h3>Bill</h3>
+            <input id="bill-input" class="input" type="number" />
+          </div>
+          <div class="select-tip-container">
+            <h3>Select Tip %</h3>
+            <div class="button-container">
+              <div class="upper-button-container">
+                <button id="tip-input" value="0.05">5%</button>
+                <button id="tip-input" value="0.1">10%</button>
+                <button id="tip-input" value="0.15">15%</button>
+              </div>
+
+              <div class="lower-button-container">
+                <button id="tip-input" value="0.25">25%</button>
+                <button id="tip-input" value="0.5">50%</button>
+                <input
+                  id="custom-input"
+                  class="custom-input"
+                  type="number"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="people-container">
+            <div class="error-container">
+              <h3>Number of People</h3>
+              <h3 class="error-text">Can't be zero</h3>
+            </div>
+
+            <input id="people-input" class="input" type="number" />
+          </div>
+        </div>
+        <div class="output-container">
+          <div class="tip-total-container">
+            <div class="tip-total-text-container">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="tip-total-result-container">
+              <h2>$0.00</h2>
+            </div>
+          </div>
+          <div class="total-container">
+            <div class="total-text-container">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="total-result-container">
+              <h2>$0.00</h2>
+            </div>
+          </div>
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/classes/bill.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
