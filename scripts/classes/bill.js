@@ -4,10 +4,17 @@ class Bill {
     this.tip = tip;
     this.people = people;
     this.total = 0;
+    this.amountTip = 0;
   }
 
-  getTotal() {
-    let percentageValue = this.value * (100 * this.tip);
+  getTotalPerPerson() {
+    let percentageValue = 100 * this.tip;
+    console.log(percentageValue);
     this.total = this.value + percentageValue / this.people;
+  }
+
+  getTipAmountPerPerson() {
+    let amountTip = (this.value * this.tip) / this.people;
+    this.amountTip = amountTip;
   }
 }
