@@ -34,14 +34,14 @@
   }
 
   .input-container h3 {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
     margin: 0 0 5px 0;
   }
 
   .input-container .input {
     height: 100%;
-    background-position: 10px 6.5px;
+    background-position: 10px 12px;
     font-size: 25px;
   }
 
@@ -112,8 +112,8 @@
   }
 
   .button-container-mobile .custom-input {
-    height: 42px;
-    width: 45%;
+    height: 35px;
+    width: 40%;
     background-color: #f3f8fb;
     outline: none;
     border: 1px solid #f3f8fb;
@@ -166,5 +166,6 @@
 
   .output-container button {
     height: 50px;
+    margin-bottom: 10px;
   }
 }
