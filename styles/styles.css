@@ -123,6 +123,10 @@ input::-webkit-inner-spin-button {
   height: 100%;
 }
 
+.select-tip-container .button-container-mobile {
+  display: none;
+}
+
 .button-container .upper-button-container {
   display: flex;
   justify-content: space-between;
